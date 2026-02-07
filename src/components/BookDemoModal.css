@@ -1,0 +1,140 @@
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.8);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 10000;
+  animation: fadeIn 0.3s ease;
+}
+
+.modal-content {
+  background: linear-gradient(135deg, #1a1a2e 0%, #0a0a0a 100%);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 20px;
+  padding: 40px;
+  max-width: 500px;
+  width: 90%;
+  position: relative;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5);
+  animation: slideUp 0.3s ease;
+}
+
+@keyframes slideUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.modal-close {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  background: transparent;
+  border: none;
+  color: #ffffff;
+  font-size: 32px;
+  cursor: pointer;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  transition: all 0.3s ease;
+}
+
+.modal-close:hover {
+  background: rgba(255, 255, 255, 0.1);
+  transform: rotate(90deg);
+}
+
+.modal-title {
+  font-size: 32px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.modal-subtitle {
+  color: #ccc;
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 16px;
+}
+
+.contact-options {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.contact-option {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding: 20px;
+  background: rgba(102, 126, 234, 0.1);
+  border: 1px solid rgba(102, 126, 234, 0.3);
+  border-radius: 15px;
+  text-decoration: none;
+  color: #ffffff;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.contact-option:hover {
+  background: rgba(102, 126, 234, 0.2);
+  border-color: rgba(102, 126, 234, 0.5);
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(102, 126, 234, 0.3);
+}
+
+.contact-icon {
+  font-size: 48px;
+  min-width: 60px;
+  text-align: center;
+}
+
+.contact-details h3 {
+  margin: 0 0 5px 0;
+  font-size: 18px;
+  color: #667eea;
+}
+
+.contact-details p {
+  margin: 0;
+  font-size: 14px;
+  color: #ccc;
+}
+
+@media (max-width: 768px) {
+  .modal-content {
+    padding: 30px 20px;
+  }
+
+  .modal-title {
+    font-size: 24px;
+  }
+
+  .contact-icon {
+    font-size: 36px;
+    min-width: 50px;
+  }
+
+  .contact-details h3 {
+    font-size: 16px;
+  }
+
+  .contact-details p {
+    font-size: 13px;
+  }
+}
