@@ -250,7 +250,8 @@ const Particles = ({
     sizeRandomness,
     cameraDistance,
     disableRotation,
-    pixelRatio
+    pixelRatio,
+    particleColors
   ]);
 
   return <div ref={containerRef} className={`particles-container ${className || ''}`} />;
