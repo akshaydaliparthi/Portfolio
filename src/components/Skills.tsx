@@ -52,7 +52,7 @@ const Skills: React.FC = () => {
           CORE SKILLS
         </h1>
 
-        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(350px, 1fr))', gap: '30px' }}>
+        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: '25px' }}>
           {Object.entries(skillsData).map(([category, skills], index) => (
             <div 
               key={category} 

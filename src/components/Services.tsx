@@ -87,7 +87,7 @@ const Services: React.FC = () => {
           From content creation to design solutions, I provide professional services tailored to your needs.
         </p>
 
-        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(350px, 1fr))', gap: '30px' }}>
+        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: '25px' }}>
           {services.map((service, index) => (
             <div 
               key={index}

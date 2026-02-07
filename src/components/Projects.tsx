@@ -43,7 +43,7 @@ const Projects: React.FC = () => {
           PROJECTS
         </h1>
 
-        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(400px, 1fr))', gap: '30px' }}>
+        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: '25px' }}>
           {projects.map((project, index) => (
             <div 
               key={index}

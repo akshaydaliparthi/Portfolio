@@ -156,7 +156,7 @@ const Home: React.FC = () => {
           <h2 className="gradient-text" style={{ fontSize: '32px', marginBottom: '20px', textAlign: 'center' }}>
             WHAT I DO
           </h2>
-          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(250px, 1fr))', gap: '30px', marginTop: '30px' }}>
+          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(200px, 1fr))', gap: '20px', marginTop: '30px' }}>
             <div style={{ textAlign: 'center' }}>
               <div style={{ fontSize: '48px', marginBottom: '15px' }}>📊</div>
               <h3 style={{ color: '#667eea', marginBottom: '10px', fontSize: '18px' }}>Data Analytics</h3>
